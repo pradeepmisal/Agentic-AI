@@ -1,0 +1,358 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Crypto Sentiment Analyzer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        .card {
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .chart-container {
+            height: 300px;
+        }
+        .sentiment-positive {
+            color: #28a745;
+        }
+        .sentiment-negative {
+            color: #dc3545;
+        }
+        .sentiment-warning {
+            color: #ffc107;
+        }
+        .sentiment-neutral {
+            color: #6c757d;
+        }
+        .urgent-message {
+            border-left: 4px solid #dc3545;
+            padding-left: 10px;
+        }
+        .header-icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        .topic-badge {
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-4">
+        <h1 class="text-center mb-4">
+            <span class="header-icon">📊</span>Telegram Crypto Sentiment Analyzer
+        </h1>
+        
+        <div class="row mb-4">
+            <div class="col-md-6 offset-md-3">
+                <div class="input-group">
+                    <input type="text" id="coinSearch" class="form-control" placeholder="Enter coin/token name (e.g., BTC, Ethereum, DeFi)" list="coinList">
+                    <datalist id="coinList"></datalist>
+                    <button class="btn btn-primary" id="searchBtn">Search</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="card-title mb-0">Summary</h5>
+                    </div>
+                    <div class="card-body">
+                        <div id="summaryContainer">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Total Messages:</span>
+                                <span id="totalMessages" class="fw-bold">0</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Urgent Messages:</span>
+                                <span id="urgentMessages" class="fw-bold text-danger">0</span>
+                            </div>
+                            <hr>
+                            <h6 class="mb-2">Telegram Sources:</h6>
+                            <div id="channelDistribution" class="small"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-5">
+                <div class="card h-100">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="card-title mb-0">Sentiment & Topics</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div id="sentimentChart" class="chart-container"></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div id="topicChart" class="chart-container"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="card-title mb-0">Coins Mentioned</h5>
+                    </div>
+                    <div class="card-body">
+                        <div id="coinChart" class="chart-container"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="card-title mb-0">Latest Insights</h5>
+                    </div>
+                    <div class="card-body">
+                        <div id="latestInsights" class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Time</th>
+                                        <th>Channel</th>
+                                        <th>Message</th>
+                                        <th>Sentiment</th>
+                                        <th>Topics</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="insightsTableBody">
+                                    <!-- Data will be populated via JavaScript -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load coin list for autocomplete
+            fetch('/api/coins')
+                .then(response => response.json())
+                .then(coins => {
+                    const coinList = document.getElementById('coinList');
+                    coins.forEach(coin => {
+                        const option = document.createElement('option');
+                        option.value = coin;
+                        coinList.appendChild(option);
+                    });
+                });
+            
+            // Load initial data
+            loadData();
+            
+            // Set up search button
+            document.getElementById('searchBtn').addEventListener('click', loadData);
+            
+            // Allow pressing Enter to search
+            document.getElementById('coinSearch').addEventListener('keyup', function(event) {
+                if (event.key === 'Enter') {
+                    loadData();
+                }
+            });
+        });
+        
+        function loadData() {
+            const coinSearch = document.getElementById('coinSearch').value;
+            const url = coinSearch ? `/api/data?coin=${encodeURIComponent(coinSearch)}` : '/api/data';
+            
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    // Update summary
+                    document.getElementById('totalMessages').textContent = data.total_messages;
+                    document.getElementById('urgentMessages').textContent = data.urgent_messages;
+                    
+                    // Update channel distribution
+                    const channelDistributionElement = document.getElementById('channelDistribution');
+                    channelDistributionElement.innerHTML = '';
+                    
+                    for (const [channel, count] of Object.entries(data.channel_distribution)) {
+                        const div = document.createElement('div');
+                        div.className = 'd-flex justify-content-between mb-1';
+                        div.innerHTML = `
+                            <span>${channel}:</span>
+                            <span>${count} msgs</span>
+                        `;
+                        channelDistributionElement.appendChild(div);
+                    }
+                    
+                    // Create sentiment chart
+                    createSentimentChart(data.sentiment_distribution);
+                    
+                    // Create topic chart
+                    createTopicChart(data.topic_distribution);
+                    
+                    // Create coin chart
+                    createCoinChart(data.coin_distribution);
+                    
+                    // Update latest insights
+                    updateLatestInsights(data.latest_insights);
+                })
+                .catch(error => console.error('Error loading data:', error));
+        }
+        
+        function createSentimentChart(sentimentData) {
+            const labels = [];
+            const values = [];
+            const colors = {
+                'positive': '#28a745',
+                'neutral': '#6c757d',
+                'negative': '#dc3545',
+                'warning': '#ffc107'
+            };
+            const backgroundColors = [];
+            
+            for (const [sentiment, count] of Object.entries(sentimentData)) {
+                if (count > 0) {
+                    labels.push(sentiment);
+                    values.push(count);
+                    backgroundColors.push(colors[sentiment] || '#6c757d');
+                }
+            }
+            
+            const data = [{
+                labels: labels,
+                values: values,
+                type: 'pie',
+                marker: {
+                    colors: backgroundColors
+                },
+                textinfo: 'label+percent',
+                hole: 0.4
+            }];
+            
+            const layout = {
+                title: 'Sentiment Distribution',
+                height: 280,
+                margin: {t: 40, b: 0, l: 0, r: 0},
+                showlegend: false
+            };
+            
+            Plotly.newPlot('sentimentChart', data, layout);
+        }
+        
+        function createTopicChart(topicData) {
+            const labels = [];
+            const values = [];
+            
+            for (const [topic, count] of Object.entries(topicData)) {
+                labels.push(topic);
+                values.push(count);
+            }
+            
+            // Sort by count (descending)
+            const combined = labels.map((label, i) => ({label, value: values[i]}));
+            combined.sort((a, b) => b.value - a.value);
+            
+            const sortedLabels = combined.map(item => item.label);
+            const sortedValues = combined.map(item => item.value);
+            
+            const data = [{
+                x: sortedValues,
+                y: sortedLabels,
+                type: 'bar',
+                orientation: 'h',
+                marker: {
+                    color: '#4e73df'
+                }
+            }];
+            
+            const layout = {
+                title: 'Top Discussed Topics',
+                height: 280,
+                margin: {t: 40, b: 0, l: 120, r: 0},
+                xaxis: {
+                    title: 'Mentions'
+                }
+            };
+            
+            Plotly.newPlot('topicChart', data, layout);
+        }
+        
+        function createCoinChart(coinData) {
+            const labels = [];
+            const values = [];
+            
+            for (const [coin, count] of Object.entries(coinData)) {
+                if (coin !== 'Unknown') {
+                    labels.push(coin);
+                    values.push(count);
+                }
+            }
+            
+            // Sort by count (descending)
+            const combined = labels.map((label, i) => ({label, value: values[i]}));
+            combined.sort((a, b) => b.value - a.value);
+            
+            // Take top 10 coins
+            const top10 = combined.slice(0, 10);
+            
+            const sortedLabels = top10.map(item => item.label);
+            const sortedValues = top10.map(item => item.value);
+            
+            const data = [{
+                labels: sortedLabels,
+                values: sortedValues,
+                type: 'pie',
+                textinfo: 'label+percent',
+                hole: 0.4
+            }];
+            
+            const layout = {
+                title: 'Top 10 Coins Mentioned',
+                height: 280,
+                margin: {t: 40, b: 0, l: 0, r: 0},
+                showlegend: false
+            };
+            
+            Plotly.newPlot('coinChart', data, layout);
+        }
+        
+        function updateLatestInsights(insights) {
+            const tableBody = document.getElementById('insightsTableBody');
+            tableBody.innerHTML = '';
+            
+            insights.forEach(insight => {
+                const row = document.createElement('tr');
+                if (insight.urgent) {
+                    row.className = 'urgent-message';
+                }
+                
+                const sentimentClass = `sentiment-${insight.sentiment}`;
+                
+                const topicBadges = insight.topics.map(topic => 
+                    `<span class="badge bg-secondary topic-badge">${topic}</span>`
+                ).join(' ');
+                
+                row.innerHTML = `
+                    <td>${insight.timestamp}</td>
+                    <td>${insight.channel}</td>
+                    <td>${insight.message}</td>
+                    <td><span class="${sentimentClass}">${insight.sentiment}</span></td>
+                    <td>${topicBadges}</td>
+                `;
+                
+                tableBody.appendChild(row);
+            });
+        }
+    </script>
+</body>
+</html>

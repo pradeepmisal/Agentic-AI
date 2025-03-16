@@ -1,0 +1,472 @@
+timestamp,channel_name,message_id,sender_username,message_text,keywords_detected,sentiment,polarity,subjectivity,coin_symbol,coin_name
+2025-03-14 12:58:27,DeFiChainOfficial,10719,7807992922,which staking methods available for dfi right now?,eth,positive,0.34285714285714286,0.46785714285714286,dfi,DeFiChain
+2025-03-14 12:56:47,DeFiChainOfficial,10718,7807992922,Pool activity and APRs coming back again?,"pool, apr",neutral,0.0,0.0,Unknown,Unknown
+2025-03-14 12:53:01,DeFiChainOfficial,10716,hsiakoq,"Hi. 10 days later I managed to get my desktop wallet working. Now I have transferred everything to my mobile wallet. The wallet consists of DFIs, dBTCs and DUSD. What else can I do with it now? Please help 😊","lp, btc",neutral,0.0,0.0,Unknown,Unknown
+2025-03-14 12:52:20,DeFiChainOfficial,10715,,"Then, my advice is to swap everything to DFI and send to your exchange and swap there into BTC or EUR. 
+
+Bake was the offramp, byt they stopped that service, so not possible to swap in the wallet now and send to Bake for unwrapp.
+
+Only way is to exit the wallet through DFI to a supported exchange and from there, swap into BTC or EUR.
+
+Cryptofactor is working on a bridge and on/offramps, but these will still take a bit more time, currently undergoing internal tests.",btc,neutral,0.1,0.58,btc,Bitcoin
+2025-03-14 12:52:06,DeFiChainOfficial,10714,heiwiiwo,Transfering it to BTC or EUR I want to do 😉,btc,neutral,0.0,0.0,btc,Bitcoin
+2025-03-14 12:49:38,DeFiChainOfficial,10713,,"The new DeFiChain voting cycle is currently underway.
+
+The cycle concludes at block 4,940,000 (~April 14, 2025)",apr,neutral,0.06818181818181818,0.42727272727272725,dfi,DeFiChain
+2025-03-14 12:46:41,DeFiChainOfficial,10707,yobejeig,"...:~$ ./.defi/defi-cli getmininginfo
+{
+  ""blocks"": 2631032,
+  ""difficulty"": 30246633513.64949,
+  ""networkhashps"": 5.238317904388838e+18,
+  ""pooledtx"": 0,
+  ""chain"": ""main"",
+  ""isoperator"": false,
+  ""masternodes"": [
+  ],
+  ""warnings"": """"
+}
+...:~$","pool, warning",warning,-0.11666666666666671,0.4666666666666667,Unknown,Unknown
+2025-03-14 12:46:16,DeFiChainOfficial,10705,yobejeig,"Hello, we setup DFI server node about 3 weeks ago and it is listed on masternode site (...). However, there no activities whatsoever on the node (stays as 0). We see on errors on the server so we don't know what to do. Also posted message on DFI DIscord, but no replay in 3 weeks. Help or guidance how to get support would be deeply appreciated.",lp,positive,0.2,0.1,dfi,DeFiChain
+2025-03-14 12:43:57,DeFiChainOfficial,10704,,"DeFiChain April DFIP & CFP Voting Round is LIVE!
+
+The latest governance round features 2 DFIPs and 5 CFPs, shaping the future of DeFiChain. The proposals include:
+
+🔹 DFIP 1 – Strengthening governance & transparency for CFPs
+🔹 DFIP 2 – Deprecation of dCrypto pools for ecosystem sustainability
+🔹 CFP 1 – Securing reliable oracle data for accurate pricing
+🔹 CFP 2 & 4 – Ensuring Light Wallet compliance & maintenance
+🔹 CFP 3 – AI-powered chatbot for user onboarding & education
+🔹 CFP 5 – Developer resources to enhance network resilience
+
+📢 Masternodes, your vote matters! Help shape the future of DeFiChain.
+
+📖 Read the full breakdown here: https://blog.defichain.com/a-closer-look-at-the-april-dfip-cfp-voting-round/","pool, lp, apr, proposal, vote, governance",positive,0.1540404040404041,0.48148148148148145,dfi,DeFiChain
+2025-03-04 21:25:11,DeFiChainOfficial,10683,del_willson,try to send some DFI to your address with the LM Token on it.,token,neutral,0.0,0.0,dfi,DeFiChain
+2025-03-04 21:24:41,DeFiChainOfficial,10679,7739166374,I wanted to remove liquitidy. Have 600utxo tokens and 10k normal dfi but it says no gas. Why? Does it need more than 500 dfi or bug?,"bug, token",warning,0.325,0.575,dfi,DeFiChain
+2025-03-04 21:23:24,DeFiChainOfficial,10676,7785602565,I’ve this error message when trying to convert from DFI EVM to Tokens in DeFiChain wallet. Any ideas?,token,neutral,0.0,0.0,dfi,DeFiChain
+2021-10-08 04:40:32,DeFiAnnouncements,529,DeFiannouncements,"🧡 $CURE 🧡
+
+❗️The founder of $CURE, Jacob Beckley, will hold a live conference in @CureTokenV2 on October 8th @ 10AM UTC
+
+🎗 $CURE is the first deflationary token built around doing good. By design, this community powered token has exponential price growth benefits for both holders and charities. We're bridging the innovation of the cryptocurrency space with causes focused on supporting and ending childhood cancer.
+
+
+🧡 Follow us and join the cause!
+
+🌐 Website: https://www.curetoken.net
+💬 Telegram:  https://t.me/CureTokenV2
+🐦 Twitter: https://twitter.com/cure_token
+📝 Medium: https://medium.com/@curetoken
+📘 Facebook: https://www.facebook.com/CureToken","community, token, holder, price",positive,0.3340909090909091,0.42083333333333334,Unknown,Unknown
+2021-06-25 07:01:32,DeFiAnnouncements,527,DeFiannouncements,"[ Photo ]
+🐕 PAPA SHIBA 🐕  |  $PHIBA
+
+🚨 Community Takeover Project 🚨
+🔥 56% Token Supply Burned 🔥
+🔥 2% Redistribution to Holders 🔥
+🔥 1% Token Burn
+
+This hyper-deflationary token has an AMAZING community of expert marketers & entrepreneurs behind it‼️
+
+💰 4100+ Holders
+💰 85 Pooled ETH
+💰 6 Figure TikTok Marketing Campaign
+💰 Numerous Influencer Partnerships
+
+✅ 6 Million Market Cap (Early!)
+✅ Renounced Ownership
+✅ No Dev Wallets (Or Devs)
+✅ Liquidity Pool Locked For 6 Months
+✅ Nobody Owns More Than 2% of Supply
+✅ Dedicated, Ethical Whales
+✅ Smart Contract Audited By Haze Crypto
+✅ #1 Top Gainers on CMC/CoinGecko
+✅ Trending #2 DexTools #4MoonTools
+✅ 99 DexTools Score
+
+➕ Charity Utility in Development
+➕ Yield Farm Expected Within The Month
+➕ VIP Club Being Developed
+
+Contract  👇
+0xc4d586ef7be9ebe80bd5ee4fbd228fe2db5f2c4e
+
+CLICK ON THE LINKS BELOW
+
+🔥  DexTools 🔥
+
+🔥 Telegram 🔥
+
+🔥 About $PHIBAs Story 🔥
+
+🔥 TikTok Marketing Roadmap 🔥
+
+Easy 10x with a MASSIVE potential for a 100x or more‼️
+
+Join us 👊😎","liquidity, pool, yield, community, token, holder, whale, partnership, eth",positive,0.18911564625850338,0.6197278911564627,eth,Ethereum
+2021-06-14 04:49:46,DeFiAnnouncements,525,DeFiannouncements,"💗 🐶 WELCOME TO DOGGY STYLE 🐶 💗 
+
+
+💗 🐶 $DSTYLE brings the Kamasutra culture to the Dogecoin family. While Most people already know the importance of Doggy Style in life, we will do our best to inform the layman about $DSTYLE. Remember that $DSTYLE has to be the 1st ever Doggy Style on the moon. So APE in and HODL and watch your money 💸 💸 💸 💸 💸 
+
+
+🚀 IT'S TIME TO PUMP $DSTYLE 🚀 
+
+
+✅ STEALTH AND FAIR LAUNCH
+✅ NO PRESALE
+✅ 100% ALLOCATED TO LIQUIDITY 
+✅ ANTI-WHALE MEASURES (1% Max buy at launch)
+
+
+💗 TOKENOMICS 💗
+
+♦ ERC20 meme token
+♦ Launch on Uniswap
+♦ 2% tax on every transaction instantly distributed among $DSTYLE holders
+♦ Total supply: 1,000,000,000,000
+♦ 100% of the supply will be allocated to Uniswap liquidity at launch
+♦ Liquidity will be locked on Unicrypt for 69 weeks
+
+
+🔗 LINKS:
+
+💻 Website: https://doggystyle.link/
+🐦 Twitter: https://twitter.com/DStyle_Doggy 
+📨 Telegram: https://t.me/doggystyle_dstyle","liquidity, token, holder, whale, pump, buy, launch",positive,0.5,0.6694444444444444,uni,Uniswap
+2021-06-05 21:30:24,DeFiAnnouncements,522,DeFiannouncements,"OneWorld Token Presale
+
+Participate on our presale,live soon only at Unicrypt
+
+Maximum: 1BNB
+Hardcap: 50BNB
+Date: 06/08/2021, 02:00 UTC
+
+Presale allocation
+
+▪️25 Investors will be Whitelisted           
+
+▪️Remaining Slots will be open for investors who holds 50Uncl or 3Ucx 
+
+TOKENOMICS:
+
+Total Supply: 100,000 $OneWorld
+Ido: 50,000 $OneWorld
+Liquidity: 49,100 $OneWorld
+Unicrypt tax: 900 $OneWorld
+
+Presale=Listing Price
+
+Whitelist Form: https://forms.gle/7QQLyBMR4xNSFZNV9
+
+Presale link: https://app.unicrypt.network/amm/pancake-v2/ilo/0x89666DEE48899226DB45E16B1C59D8556c331EB0
+
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+Website 🌐: https://www.oneworldtoken.com
+
+Announcement Channel 🔊: https://t.me/oneworldannouncement
+
+Telegram Community 🫂: https://t.me/OneWorldToken
+
+Twitter 🐦: https://twitter.com/OneWorldToken?s=09
+
+Discord:  https://discord.gg/PhdVTeMDJK","liquidity, community, token, announcement, price, bnb",neutral,0.03409090909090909,0.6875,link,Chainlink
+2021-06-01 07:56:46,DeFiAnnouncements,520,DeFiannouncements,"We're happy to announce a new round of #LatokenLC!
+
+🔷 Smaugs NFT $SMS
+🔷 Doggy Swap $DOGS
+🔷 Cocos-BCX $COCOS
+🔷 HALAL INU $HALA
+
+The winner will be listed on LATOKEN. Vote now & win crypto rewards in airdrops 💰
+
+➡️ https://go.latoken.com/5v1","vote, token",positive,0.3840909090909091,0.5636363636363636,Unknown,Unknown
+2021-05-16 01:44:10,DeFiAnnouncements,518,DeFiannouncements,"Tracking what the whales are doing is crucial, and we’re making it easier than ever for Uniswap pairs.
+
+The Uniswap Whale Alert tool is coming to our platform next week! 🦄 🐳
+
+And to top it off, we’ll also be announcing a very special partnership, so stay tuned!","alert, whale, partnership",warning,0.24107142857142858,0.5607142857142857,uni,Uniswap
+2021-05-15 03:10:09,DeFiAnnouncements,516,DeFiannouncements,"A&T Capital, OKEx Blockdream Ventures, Blockwater, IOSG, Kernel Ventures, SNZ, SevenX Ventures, Tripara, & NGC Ventures joined forces to form AVATAR, ay nagsanib pwersa upang mabuo ang AVATAR, isang independiyenteng $20M Fund para sa pagbuo ng Avalanche ecosystem.
+
+1️⃣ Ang AVATAR ay binubuo ng isang bihasang pangkat ng mga pinuno mula sa Goldman Sachs, JPMorgan Chase, Tsinghua University, Peking University, at Carnegie Mellon.
+
+
+2️⃣ Ang AVATAR ay aktibong naghahanap ng mga bagong proyekto upang mamuhunan ngayon at hinihimok ang mga tagapagtatag na makipag-ugnay at ibahagi ang kanilang mga ideya. Mangyaring makipag- ugnayan sa China@avalabs.org
+
+📖Medium: 
+https://medium.com/avalanchefilipino/inilunsad-ng-avalanche-foundation-ang-avatar-venture-fund-na-may-20m-investment-para-sa-avalanche-dd5b7799d572
+
+🌟Twitter:
+https://twitter.com/Avalanche_ph/status/1392951252841992194",avalanche,neutral,0.0,0.0,avax,Avalanche
+2021-05-13 13:32:02,DeFiAnnouncements,514,DeFiannouncements,"Inilunsad ng Avalanche Foundation ang AVATAR Venture Fund na may $20M Investment para sa Avalanche Ecosystem Development.
+
+A&T Capital, 
+@okex_ventures
+ , 
+@Blockwatermgt
+ , 
+@KernelVentures
+ , SNZ, 
+@SevenXVentures
+, Tripara, 
+@NGC_Ventures
+ .
+https://medium.com/avalanchefilipino/inilunsad-ng-avalanche-foundation-ang-avatar-venture-fund-na-may-20m-investment-para-sa-avalanche-dd5b7799d572",avalanche,neutral,0.0,0.0,avax,Avalanche
+2021-05-10 03:05:08,DeFiAnnouncements,512,DeFiannouncements,"This week, we’ve made a new partnership and released the AI Sentiment Price Prediction tool, which is only a start for all the new features that are coming with the platform upgrade. 💻
+
+Read more in our Weekly Development report here ⬇️
+https://newscrypto.io/blog/nwc-dev-32","upgrade, release, partnership, price",positive,0.19318181818181818,0.6022727272727273,Unknown,Unknown
+2021-05-08 23:58:04,DeFiAnnouncements,511,DeFiannouncements,"‼️ Announcing the Backtesting bot ‼️
+
+Backtesting is one of the most important parts of trading, and we’ll make it effortless!
+
+You’ll be able to:
+✅backtest pattern strategies
+✅see detailed success rates
+✅choose any token or timeframe!
+
+Read more here⬇️
+newscrypto.io/blog/backtesting-bot-announcement","token, announcement",positive,0.4333333333333333,0.5625,Unknown,Unknown
+2021-05-03 00:12:09,DeFiAnnouncements,507,DeFiannouncements,"We’re hard at work on our DeFi platform, and we’ve already deployed a testnet version!
+
+We chose 100 random users who are already helping us test it, and the mainnet version will be live when we’re sure everything is optimized.
+
+In the meantime, prepare for some amazing APYs! 📈","lp, apy",neutral,0.08893939393939394,0.6661111111111111,Unknown,Unknown
+2021-05-02 04:26:49,DeFiAnnouncements,506,DeFiannouncements,"We’re starting a new series of videos with our advisors 📽️
+
+To kick it off, we talked to Blockchain Wayne about some practical tips on how to approach crypto, his path as a crypto educator, current events and some news about our project!
+
+Watch it here ⬇️
+https://www.youtube.com/watch?v=LYQgD7cYcsc",ath,neutral,0.04545454545454545,0.3181818181818182,Unknown,Unknown
+2021-04-27 23:50:41,DeFiAnnouncements,503,DeFiannouncements,"If you want to store your coins in the safest way possible, while also getting:
+
+✅up to 25% APY and
+✅a NewsCrypto platform subscription
+
+Then stake your NWC tokens here (or on the mobile app) ⬇️
+newscrypto.io/staking-program/","apy, token",neutral,0.0,1.0,Unknown,Unknown
+2021-04-26 12:01:01,DeFiAnnouncements,501,DeFiannouncements,"We're excited to announce a partnership with Morpheus Labs!
+
+The future is decentralized, and with their expertise in building blockchain-based applications and our educational content, we're proud to be ushering it in together!
+
+Read more here⬇️
+https://newscrypto.io/blog/newscrypto-x-morpheus-labs","partnership, eth",positive,0.385,0.525,Unknown,Unknown
+2021-04-26 08:21:27,DeFiAnnouncements,500,DeFiannouncements,"The AI Sentiment Price Prediction tool is almost ready, so we’re sharing a sneak peek of how it will look.
+
+All we can say is that we were blown away by how accurate the predictions were, so you’ll definitely want to check it out! 📈",price,positive,0.20000000000000004,0.5444444444444444,Unknown,Unknown
+2021-04-24 15:40:43,DeFiAnnouncements,499,DeFiannouncements,"Privacy is one of the most important aspects of crypto, and yet few projects take it seriously.
+
+That’s why we’re proud to announce our partnership with Pirate Chain, the coin that’s taking privacy and anonymity further than ever before!
+
+Read more here ⬇️
+newscrypto.io/blog/newscrypto-x-piratechain",partnership,positive,0.2380952380952381,0.6095238095238095,Unknown,Unknown
+2021-04-24 15:39:33,DeFiAnnouncements,498,DeFiannouncements,"The new version of our wallet is out NOW!
+
+Store your NWC tokens safely right in your pocket, now with a fresh, new interface! 💰🔒
+
+Get the wallet now:
+Android: http://bit.ly/34QJI4V
+iOS: http://apple.co/37TmMnx",token,positive,0.2146103896103896,0.4862012987012987,Unknown,Unknown
+2021-04-18 07:05:45,DeFiAnnouncements,496,DeFiannouncements,"We’ve put together an article outlining all the different features of our app in one place, from portfolio tracking to crypto games. 📱
+
+And of course, there are way more features to come in future updates, so stay tuned!
+
+Check it out here ⬇️
+newscrypto.io/blog/newscrypto-app",eth,positive,0.16666666666666666,0.4083333333333334,Unknown,Unknown
+2021-04-15 06:05:32,DeFiAnnouncements,495,DeFiannouncements,"A new exchange listing can influence the price of any token by a lot.
+
+That’s why knowing about it immediately can be a huge advantage. And with our app, you can set an alert and get notified the moment it happens! 🔔
+
+Read more about the alerts here ⬇️
+newscrypto.io/blog/nwc-app-smart-alerts","token, alert, price",warning,0.31266233766233764,0.6243506493506493,Unknown,Unknown
+2021-04-12 11:13:30,DeFiAnnouncements,494,DeFiannouncements,"Diversification is a key part of every successful trading strategy.
+
+But in order to diversify, you need to understand the correlations between different assets. 📊
+
+We’ve decided to make that easy for you with an upgraded Correlation tool! 
+
+You can see how the largest cryptocurrencies are correlated with BTC, ETH, a DeFi index, gold, the dollar index and the S&P 500 on three different time frames!
+
+Check it out in the Advanced section of the platform ⬇️
+platform.newscrypto.io/correlation/","upgrade, eth, btc",positive,0.2638888888888889,0.7638888888888888,eth,Ethereum
+2021-04-12 11:12:09,DeFiAnnouncements,493,DeFiannouncements,"There are many uses for the in-app credits: buying extra smart alerts, analysis reports, playing games and more.
+
+And if you want to cash out, you can always swap them out for NWC! 
+
+Get the NewsCrypto app 2.0 here ⬇️
+Android: play.google.com/store/apps/details?id=io.newscrypto.app
+iOS: apps.apple.com/si/app/newscrypto-app/id1541370304","alert, buy",warning,0.3035714285714286,0.4357142857142857,Unknown,Unknown
+2021-04-11 16:12:50,DeFiAnnouncements,492,DeFiannouncements,"🌠🌠  Jupter Token 🌠🌠
+
+🚀✈️  Launching NOW UNICRYPT ! ✈️🚀
+🥞 Launching soon on fairlaunch, with PancakeSwap 🥞
+
+Project detailed  :
+
+💡⏳You can earn intertests with Jupter by holding it ⏳💡
+
+💸 Total 10% Fee on the transactions : 5% auto locked to liquidity and 5% for the holders 💸
+
+💣🧨  Anti-Rug, Dev has no tokens, this is a community coin, no mint new token 🧨💣
+
+🔒 40 % Liquidity will be locked at the FairLaunch 🔒
+
+
+
+Join Us ! :
+
+Telegram :  https://t.me/jupterwallet
+
+Twitter :  https://twitter.com/jupterwallet/
+
+BscScan :  https://bscscan.com/token/0xd72b9afef41dcb14060e82f2d21f0b0173958b21
+
+Website :  https://jupterwallet.online/
+
+Whitepaper : https://whitepaper.jupterwallet.online/
+
+LINK PRE-SALE: https://unicrypt.network/amm/pancake/ilo/0xb01692aF4eBD9e1381Bd7Cb6b0BE860f95c5a844
+
+
+AMA -> 13/04 - 12 PM UTC - @404DailyCrypto
+
+More info join our telegram!
+@jupterwallet","liquidity, community, token, holder, launch",positive,0.2590909090909091,0.6136363636363636,link,Chainlink
+2021-04-10 08:17:55,DeFiAnnouncements,490,DeFiannouncements,"ANOTHER GEM!!    $800 value 🔥🔥🔥
+
+⭐UNICRYPT AIRDROP!!
+
+💰Total airdrop: 5,000 UNCX : 2UNCX worth 800 USD per participant and 0.2 UNCX per valid referral.
+*The price on coinmarketcap is currently 1 UNCX = 400 USD
+
+✅Participants are limited to only 1,500 participants
+ (First come, first serve)
+
+Referral link : @CashpayLord
+
+📝Fill form:
+https://docs.google.com/forms/d/e/1FAIpQLSdtjsXykmVJzZJwIqsT2qGH1Ilym4pMbiYzVZE7cteir7HYSw/viewform?pli=1&pli=1
+https://docs.google.com/forms/d/e/1FAIpQLSdtjsXykmVJzZJwIqsT2qGH1Ilym4pMbiYzVZE7cteir7HYSw/viewform?pli=1&pli=1
+
+📌Complete all the tasks below and get 2 UNCX",price,positive,0.10357142857142856,0.4324404761904762,link,Chainlink
+2021-04-07 00:18:30,DeFiAnnouncements,488,DeFiannouncements,"Introducing our advisor Quentin Herbrecht, who will help us grow NewsCrypto in the French-speaking world. 🇫🇷
+
+He’s an experienced professional in blockchain consulting, and his expertise was even picked up on by Forbes magazine!
+
+Read his interview here ⬇️
+https://www.forbes.com/sites/geraldfenech/2019/01/24/interview-achieving-success-in-blockchain-consulting-during-a-bear-market/?sh=26aa81255f14",lp,positive,0.3,0.3333333333333333,Unknown,Unknown
+2021-04-04 13:23:55,DeFiAnnouncements,486,DeFiannouncements,"Decentralized exchanges take the ideals of transparency and security to the next level. 🔐 💱
+
+And that's why we're proud to be on two of the largest DEXes, both Uniswap 🦄 and PancakeSwap 🥞!
+
+Trade NWC here ⬇️
+Uniswap: bit.ly/3wsN7ms
+PancakeSwap: bit.ly/3dBO8ju",security,warning,0.4,0.5,uni,Uniswap
+2021-04-01 06:15:33,DeFiAnnouncements,484,DeFiannouncements,"To celebrate the release of v2 of our app, we’re giving away 5 x $100 in NWC tokens! 💸
+
+Follow us on Twitter, retweet and reply to this tweet with a photo of yourself using our app with a beautiful view in the background and #NewsCryptoApp! 🌄
+
+The five best photos will be chosen on Sunday. 🏆","token, release",positive,0.925,0.65,Unknown,Unknown
+2021-03-29 02:06:07,DeFiAnnouncements,482,DeFiannouncements,"Only three days left until the release of an even better version of the only crypto app you'll ever need!
+
+Today, we're presenting the Community Predictions section, which has been expanded, reorganized and smoothed out.
+
+And of course, the rewards will still be there! 💸","community, release",positive,0.125,0.625,Unknown,Unknown
+2025-03-16 12:42:25,PancakeSwap,3632616,6593202212,If you need any help about this pancakeswap now tell me here I'm here to help you,lp,neutral,0.0,0.0,cake,PancakeSwap
+2025-03-16 09:23:38,PancakeSwap,3632565,PancakeSwapMod_bot,"Please use #Off-Topic channel on our Discord server to chat about price and market status
+
+Click to join!",price,neutral,0.0,0.0,Unknown,Unknown
+2025-03-16 08:57:32,PancakeSwap,3632551,791930882,What’s the token contract address?,token,neutral,0.0,0.0,Unknown,Unknown
+2025-03-16 06:24:32,PancakeSwap,3632529,431931780,#Pancakeswap will add Bitcoin chain? 👀,bitcoin,neutral,0.0,0.0,btc,Bitcoin
+2025-03-16 05:30:06,PancakeSwap,3632504,973787141,"❔ These tips may help you avoid buying a scam token
+
+⬇️ Tools for CHECK CONTRACT ADDRESS: ⬇️
+
+Insert contract address to search bar on website:
+➡️ https://honeypot.is/
+➡️ https://tokensniffer.com/
+
+❔ More info about scam tokens
+https://t.me/PancakeSwap/2795649/3512804","scam, lp, token, buy",warning,0.5,0.5,Unknown,Unknown
+2025-03-16 05:29:51,PancakeSwap,3632503,973787141,"check if it is scam token, mate","scam, token",warning,0.0,0.0,Unknown,Unknown
+2025-03-16 05:21:06,PancakeSwap,3632496,PancakeSwapMod_bot,"PancakeSwap Social Media Accounts :
+
+PancakeSwap Official Forum
+PancakeSwap Official Blog
+
+@PancakeSwap: Global TG Group (English)
+@PancakeSwapAnn: PancakeSwap Announcements (English)
+
+Local Communities
+
+@PancakeSwapIndonesia: PancakeSwap Indonesian TG
+@PancakeSwap_CN: PancakeSwap Chinese TG
+@PancakeSwapVN: PancakeSwap Vietnamese TG
+@PancakeSwapES: PancakeSwap Spanish TG
+@pancakeswap_ru: PancakeSwap Russian TG
+@pancakeswapturkiye: PancakeSwap Turkish TG
+@pancakeswapfr:  PancakeSwap French TG
+@pancakeswap_ita: PancakeSwap Italian TG
+@pancakeswapjp: PancakeSwap Japanese TG
+@PancakeSwapPortuguese: PancakeSwap Portuguese TG
+@Pancakeswap_Ph: PancakeSwap Philippines TG
+@PancakeSwapGeorgia: PancakeSwap Georgia TG
+@PancakeSwap_India: PancakeSwap India TG",announcement,neutral,0.0030303030303030303,0.006060606060606061,cake,PancakeSwap
+2025-03-16 05:16:18,PancakeSwap,3632491,PancakeSwapMod_bot,"PancakeSwap Social Media Accounts :
+
+PancakeSwap Official Forum
+PancakeSwap Official Blog
+
+@PancakeSwap: Global TG Group (English)
+@PancakeSwapAnn: PancakeSwap Announcements (English)
+
+Local Communities
+
+@PancakeSwapIndonesia: PancakeSwap Indonesian TG
+@PancakeSwap_CN: PancakeSwap Chinese TG
+@PancakeSwapVN: PancakeSwap Vietnamese TG
+@PancakeSwapES: PancakeSwap Spanish TG
+@pancakeswap_ru: PancakeSwap Russian TG
+@pancakeswapturkiye: PancakeSwap Turkish TG
+@pancakeswapfr:  PancakeSwap French TG
+@pancakeswap_ita: PancakeSwap Italian TG
+@pancakeswapjp: PancakeSwap Japanese TG
+@PancakeSwapPortuguese: PancakeSwap Portuguese TG
+@Pancakeswap_Ph: PancakeSwap Philippines TG
+@PancakeSwapGeorgia: PancakeSwap Georgia TG
+@PancakeSwap_India: PancakeSwap India TG",announcement,neutral,0.0030303030303030303,0.006060606060606061,cake,PancakeSwap
+2025-03-16 05:16:01,PancakeSwap,3632489,1828044640,为什么以前加的Lp池子看不到了,lp,neutral,0.0,0.0,Unknown,Unknown
+2025-03-16 03:29:20,PancakeSwap,3632460,984794418,is there an error? is there a  approval on your wallet to sign? and what token ?,token,neutral,0.0,0.0,Unknown,Unknown
+2025-03-16 00:22:47,PancakeSwap,3632418,984794418,cant you remove the limit order price?,price,neutral,0.0,0.0,Unknown,Unknown
+2025-03-16 00:17:22,PancakeSwap,3632411,984794418,check AITECH pool,pool,neutral,0.0,0.0,Unknown,Unknown
+2025-03-16 00:16:00,PancakeSwap,3632410,984794418,checking more dont dm me or anybody whos asking dms. they are scammers,scam,warning,0.5,0.5,Unknown,Unknown
+2025-03-16 00:14:57,PancakeSwap,3632408,1117466777,Is this helpful?,lp,neutral,0.0,0.0,Unknown,Unknown
+2025-03-16 12:44:34,SynthetixAnnouncements,705265,Synthetixpibot,"🎉 Airdrop START 🎉
+
+Synthetix is a decentralized finance (DeFi) protocol that provides on-chain exposure to a wide variety of crypto and non-crypto assets. The protocol is based on the Ethereum (ETH) blockchain and offers users access to highly liquid synthetic assets (synths). Synths track and provide returns on the underlying asset without requiring one to directly hold the asset.
+    
+$50,000 worth of SNX airdrops for 100 Members.
+    
+To get this offer, just perform the task below:
+    
+1. Join group;
+2. Click Join Airdrop button
+    
+🍀 Good luck🍀","eth, ethereum",positive,0.21,0.34,eth,Ethereum
+2023-06-16 16:52:32,SynthetixAnnouncements,279358,Synthetixpibot,"🎉 Airdrop START 🎉
+
+Synthetix is a decentralized finance (DeFi) protocol that provides on-chain exposure to a wide variety of crypto and non-crypto assets. The protocol is based on the Ethereum (ETH) blockchain and offers users access to highly liquid synthetic assets (synths). Synths track and provide returns on the underlying asset without requiring one to directly hold the asset.
+    
+$50,000 worth of SNX airdrops for 100 Members.
+    
+To get this offer, just perform the task below:
+    
+1. Join group;
+2. Click Join Airdrop button
+    
+🍀 Good luck🍀","eth, ethereum",positive,0.21,0.34,eth,Ethereum
+2025-03-08 11:14:05,YearnFinance,322567,My_Name_is_Z00,I think they might be asking if there's yearn reflections available by holding a partnered token,token,positive,0.4,0.4,yfi,Yearn
+2025-02-26 10:41:18,YearnFinance,321676,MissRose_bot,Price talk to the social channel please,price,neutral,0.03333333333333333,0.06666666666666667,Unknown,Unknown
+2025-02-26 10:35:34,YearnFinance,321673,Cryptoneaty1,"Doable, but time will tell.  I remember when people laughed as some of the predictions giving about BTC.....now we're living the reality of those predictions😉",btc,positive,0.7,0.2,btc,Bitcoin
+2025-02-26 10:28:28,YearnFinance,321672,MissRose_bot,Price talk to the social channel please,price,neutral,0.03333333333333333,0.06666666666666667,Unknown,Unknown
+2025-02-17 10:13:01,YearnFinance,321142,6439578414,"Morning all. Need to borrow usdc / usdt using YFI as collateral, any recommendations","usdt, usdc",neutral,0.0,0.0,yfi,Yearn
